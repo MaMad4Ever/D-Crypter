@@ -4,7 +4,7 @@ Crypter in Python3 with advanced functionality, Encrypt &amp; Decrypt Source wit
 ---
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/fac337a9-9847-4236-8a05-919752679262" height=300px width=2000px>
+  <img src="https://github.com/user-attachments/assets/b290b8cc-4d0b-4813-9624-c6985a45ff50">
 </div>
 
 ## Getting Started
