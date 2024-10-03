@@ -16,13 +16,13 @@ To get a local copy up and running follow these simple steps.
    ```bash
    $ git clone https://github.com/MaMad4Ever/D-Crypter.git
    ```
-2. Setup tornado with requirement packages.
+2. Install requirement packages.
    ```bash
-   $ pip install -r /D-Crypter/requirements.txt
+   $ pip install -r ./D-Crypter/requirements.txt
    ```
 
 ### Usage
-* Run tornado with sudo permissions & -start flag.
+* Run D-Crypter.
    ```bash
    $ python3 Main.py
    ```
