@@ -14,7 +14,7 @@ To get a local copy up and running follow these simple steps.
 ### Installation
 1. Clone the repo
    ```bash
-   $ git clone https://github.com/samogod/tornado.git
+   $ git clone https://github.com/MaMad4Ever/D-Crypter.git
    ```
 2. Setup tornado with requirement packages.
    ```bash
