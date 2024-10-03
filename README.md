@@ -20,13 +20,9 @@ To get a local copy up and running follow these simple steps.
    ```bash
    $ pip install -r /D-Crypter/requirements.txt
    ```
-3. Run it with sudo permissions.
-   ```bash
-   $ sudo tornado
-   ```
 
 ### Usage
 * Run tornado with sudo permissions & -start flag.
    ```bash
-   $ sudo tornado -start
+   $ python3 Main.py
    ```
