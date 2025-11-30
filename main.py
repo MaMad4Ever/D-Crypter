@@ -6,8 +6,9 @@ from base64 import b64encode
 import codecs
 import hashlib
 import urllib.parse
+import punycode
 from Banner import banner, menu, bold, endBold, clean
-import Decoder
+import decoder
 
 init()
 
@@ -76,13 +77,25 @@ while (True):
             print(md5)
             input(bold + Fore.GREEN + "Press Any Key..." + endBold)
             continue
-
+        
         elif (option == 6):
             system(clean())
             banner()
-            Decoder.decoder_menu()
+            print(Fore.WHITE + "Enter Your Text:")
+            user_option = input(bold + Fore.RED + "[*] Tools" + Fore.WHITE + "/home/PunyCode → " + endBold)
+            punycode_encoder = user_option
+            punycode_encoder = punycode.convert(punycode_encoder)
+            print(bold + Fore.WHITE + "Encrypted!\n" + endBold)
+            print(punycode_encoder)
+            input(bold + Fore.GREEN + "Press Any Key..." + endBold)
+            continue
+        
+        elif (option == 7):
+            system(clean())
+            banner()
+            decoder.decoder_menu()
             user_option = int(input(bold + Fore.RED + "[*] Tools" + Fore.WHITE + "/home/Decoder → " + endBold))
-            Decoder.decoder(user_option)
+            decoder.decoder(user_option)
             continue
         
         elif (option == 0):
