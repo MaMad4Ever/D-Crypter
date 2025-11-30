@@ -5,6 +5,7 @@ from time import sleep
 from base64 import b64decode
 import codecs
 import urllib.parse
+import punycode
 from Banner import banner, line, bold, endBold, clean
 
 init()
@@ -23,7 +24,11 @@ def decoder_menu():
     print(Fore.CYAN + "*" * 22)
     sleep(0.1)
 
-    print(bold + Fore.WHITE +"[3]" +Fore.LIGHTYELLOW_EX + "Url" + endBold)
+    print(bold + Fore.WHITE +"[4]" +Fore.LIGHTYELLOW_EX + "Url" + endBold)
+    print(Fore.CYAN + "*" * 22)
+    sleep(0.1)
+
+    print(bold + Fore.WHITE +"[5]" +Fore.LIGHTYELLOW_EX + "PunyCode" + endBold)
     print(Fore.CYAN + "*" * 22)
     sleep(0.1)
 
@@ -71,10 +76,23 @@ def decoder(user_input):
         print(Fore.WHITE + "Enter Your Encrypted text in Url")
         user_option = input(bold + Fore.RED + "[*] Tools" + Fore.WHITE + "/home/decoder/Url → " + endBold)
         text = urllib.parse.unquote(user_option)
+        
         print(bold + Fore.WHITE + "Decrypted!\n" + endBold)
         print(text)
         input(bold + Fore.GREEN + "Press Any Key..." + endBold)
+
+    elif (user_input == 5):
+        system(clean())
+        banner()
+        print(Fore.WHITE + "Enter Your Encrypted text in Url")
+        user_option = input(bold + Fore.RED + "[*] Tools" + Fore.WHITE + "/home/decoder/PunyCode → " + endBold)
+        punycode_decoder = user_option
+        punycode_decoder = punycode.convert(punycode_decoder)
         
+        print(bold + Fore.WHITE + "Decrypted!\n" + endBold)
+        print(punycode_decoder)
+        input(bold + Fore.GREEN + "Press Any Key..." + endBold)       
+
     elif (user_input == 0):
         pass
 
