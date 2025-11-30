@@ -54,7 +54,10 @@ def menu():
     print(bold + Fore.WHITE + "[5]" + Fore.LIGHTYELLOW_EX + "MD5" + endBold)
     line()
 
-    print(bold + Fore.WHITE + "[6]" + Fore.LIGHTYELLOW_EX + "Decoder" + endBold)
+    print(bold + Fore.WHITE + "[6]" + Fore.LIGHTYELLOW_EX + "PunyCode" + endBold)
+    line()
+
+    print(bold + Fore.WHITE + "[7]" + Fore.LIGHTYELLOW_EX + "Decoder" + endBold)
     line()
 
     print(bold + Fore.WHITE + "[0]" + Fore.LIGHTYELLOW_EX + "Exit" + endBold)
